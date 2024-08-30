@@ -1,0 +1,378 @@
+@font-face {
+    font-family: elsofont;
+    src: url(font1.ttf);
+}
+
+body {
+    background-image: url('containerbackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    font-family: elsofont;
+    color: white;
+    height: 100vh;
+
+}
+
+.container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 80%;
+    height: 80%;
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.exit {
+    float: right;
+    background-image: url(x-icon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+
+}
+
+.right {
+    padding-left: 5%;
+    width: 50%;
+    height: 100%;
+}
+
+.left h1{
+    color: white;
+    font-size: 175px;
+    padding-top: -50px;
+    text-align: center;
+    margin: 0;
+}
+
+.img1{
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+a{
+    color: white;
+}
+
+h2{
+    font-size: 50px;
+}
+
+p{  
+    margin-top: -20px;
+    width: 80%;
+    font-size: 30px;
+    text-align: justify;
+}
+
+@media only screen and (min-width: 2560px) {
+    .exit {
+        width: 128px;
+        height: 128px;
+    }
+
+    .left h1{
+        padding-top: 150px;
+        padding-left: 80px;
+        font-size: 300px;
+    }
+
+    h2{
+        font-size: 70px
+    }
+
+    p{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 2560px) {
+    .exit {
+        width: 64px;
+        height: 64px;
+    }
+
+    .left h1{
+        padding-top: 10px;
+        padding-left: 80px;
+        font-size: 150px;
+    }
+
+    h2{
+        font-size: 40px
+    }
+
+    p{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .exit {
+        width: 64px;
+        height: 64px;
+    }
+
+    .left h1{
+        padding-top: 100px;
+        padding-left: 80px;
+        font-size: 100px;
+    }
+
+    h2{
+        padding-left: 20px;
+        font-size: 35px
+    }
+
+    p{
+        padding-left: 20px;
+        font-size: 22.5px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .conatiner {
+        height: 90vh;
+    }
+
+    .exit {
+        width: 64px;
+        height: 64px;
+    }
+
+    .left h1{
+        padding-top: 100px;
+        padding-left: 45px;
+        font-size: 100px;
+    }
+
+    h2{
+        padding-left: 20px;
+        font-size: 30px
+    }
+
+    p{
+        padding-left: 20px;
+        font-size: 17.5px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container::-webkit-scrollbar {
+        display: none;
+      }
+      
+    .container {
+        -ms-overflow-style: none; 
+        scrollbar-width: none;  
+    
+    }
+
+    .container {
+        overflow-y: scroll;
+        display: block;
+        height: 90vh;
+    }
+
+    .left {
+        padding: 0;
+        margin: auto;
+    }
+
+    .img1 {
+        padding: 0;
+        width: 150%;
+        margin-left: -25%;
+        margin-top: 10%;
+    }
+
+    .exit {
+        width: 64px;
+        height: 64px;
+    }
+
+    .left h1{
+        padding-top: 100px;
+        padding: 0;
+        font-size: 100px;
+    }
+
+    .right{
+        margin: auto;
+        width: 80%;
+
+    }
+
+    #elso {
+        margin-top: -250px;
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+        margin: auto;
+        margin-left: -30px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-size: 30px
+    }
+
+    p{
+        margin: auto;
+        margin-left: 10px;
+        font-size: 17.5px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 425px) {
+    .container::-webkit-scrollbar {
+        display: none;
+      }
+      
+    .container {
+        -ms-overflow-style: none; 
+        scrollbar-width: none;  
+    
+    }
+
+    .container {
+        overflow-y: scroll;
+        display: block;
+        height: 90vh;
+    }
+
+    .left {
+        padding: 0;
+        height: 80%;
+        margin: auto;
+    }
+
+    .img1 {
+        padding: 0;
+        width: 150%;
+        margin-left: -25%;
+        margin-top: 10%;
+    }
+
+    .exit {
+        width: 32px;
+        height: 32px;
+    }
+
+    .left h1{
+        padding-top: 100px;
+        padding: 0;
+        padding-left: -100px;
+        font-size: 50px;
+    }
+
+    .right{
+        margin: auto;
+        width: 80%;
+
+    }
+
+    #elso {
+        margin-top: -250px;
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+        margin: auto;
+        margin-left: -30px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-size: 30px
+    }
+
+    p{
+        margin: auto;
+        margin-left: 0px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .container::-webkit-scrollbar {
+        display: none;
+      }
+      
+    .container {
+        -ms-overflow-style: none; 
+        scrollbar-width: none;  
+    
+    }
+
+    .container {
+        overflow-y: scroll;
+        display: block;
+        height: 90vh;
+    }
+
+    .left {
+        padding: 0;
+        height: 80%;
+        margin: auto;
+    }
+
+    .img1 {
+        padding: 0;
+        width: 150%;
+        margin-left: -25%;
+        margin-top: 10%;
+    }
+
+    .exit {
+        width: 32px;
+        height: 32px;
+    }
+
+    .left h1{
+        padding-top: 100px;
+        padding: 0;
+        padding-left: -100px;
+        font-size: 50px;
+    }
+
+    .right{
+        margin: auto;
+        width: 80%;
+
+    }
+
+    #elso {
+        margin-top: -250px;
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+        margin: auto;
+        margin-left: -30px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-size: 25px
+    }
+
+    p{
+        margin: auto;
+        margin-left: 0px;
+        font-size: 17.5px;
+    }
+}
