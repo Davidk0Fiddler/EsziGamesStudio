@@ -1,0 +1,156 @@
+@font-face {
+    font-family: elsofont;
+    src: url(font1.ttf);
+}
+
+body {
+    background-image: url('containerbackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    font-family: elsofont;
+    color: white;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.exit {
+    float: right;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+}
+
+.right {
+    padding-left: 5%;
+    width: 50%;
+    height: 100%;
+}
+
+.left h1 {
+    color: white;
+    font-size: 150px;
+    text-align: center;
+    margin: 0;
+}
+
+.img1 {
+    width: 70%;
+    margin-left: 10%;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+a {
+    color: white;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p {
+    margin-top: -20px;
+    width: 80%;
+    font-size: 22.5px;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        height: 90vh;
+    }
+
+    .left h1 {
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 17.5px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        overflow-y: scroll;
+        display: block;
+        height: 90vh;
+    }
+
+    .left {
+        padding: 0;
+        margin: auto;
+    }
+
+    .img1 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .left h1 {
+        font-size: 80px;
+    }
+
+    .right {
+        width: 90%;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 17.5px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        overflow-y: scroll;
+        display: block;
+        height: 90vh;
+    }
+
+    .img1 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .left h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
